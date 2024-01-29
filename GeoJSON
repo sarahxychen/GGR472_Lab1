@@ -1,0 +1,139 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -79.39720024566832,
+          43.663155082671835
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "Name": "Howard Ferguson Dining Hall",
+        "Category": "Residence Dining Hall",
+        "Hours": "7:30am-7:30pm"
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+         "coordinates": [
+           -79.40082513521887,
+          43.661733596575964
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "Name": "New College Dining Hall",
+        "Category": "Residence Dining Hall",
+        "Hours": "7:00am-10:00pm"
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+         "coordinates": [
+           -79.3849858456688,
+           43.65427570907308
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "Name": "Chestnut Dining Hall",
+        "Category": "Residence Dining Hall",
+        "Hours": "7:00am-10:00pm"
+      },
+      "id": 2
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+         "coordinates": [
+           -79.39897978799698,
+           43.65801337386509
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "Name": "CampusOne Dining Hall",
+        "Category": "Residence Dining Hall",
+        "Hours": "7:00am-9:00pm"
+      },
+      "id": 3
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+         "coordinates": [
+           -79.39854204566842,
+           43.66230056970051
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "Name": "Sid's Cafe",
+        "Category": "Retail Cafeteria",
+        "Hours": "11:00am-6:00pm",
+        "marker-color": "#1b2ebb"
+      },
+      "id": 4
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+         "coordinates": [
+           -79.39895119270565,
+           43.66477518100711
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "Name": "Robart's Library Cafe",
+        "Category": "Retail Cafeteria",
+        "Hours": "11:00am-6:00pm",
+        "marker-color": "#1b2ebb"
+      },
+      "id": 5
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+         "coordinates": [
+           -79.39895119270565,
+           43.66477518100711
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "Name": "Robart's Library Cafe",
+        "Category": "Retail Cafeteria",
+        "Hours": "11:00am-6:00pm",
+        "marker-color": "#1b2ebb"
+      },
+      "id": 5
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+         "coordinates": [
+           -79.39299377265348,
+           43.66070224316911
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "Name": "Medical Sciences Cafe",
+        "Category": "Retail Cafeteria",
+        "Hours": "11:00am-5:00pm",
+        "marker-color": "#1b2ebb"
+      },
+      "id": 6
+    }
+  ]
+}
+
+

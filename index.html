@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Toronto Dining Spots</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Style tab -->
+    <style>
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+        
+        /* Create an active/current tablink class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+        
+        /* Style the tab content */
+        .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+        }
+        
+        /* Fade in tabs */
+        @-webkit-keyframes fadeEffect {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+        
+        @keyframes fadeEffect {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body> 
+<!-- Navbar theme -->
+<nav class="navbar" style="background-color: #3355f068;">
+<!-- Navbar bootstrap; logo cover -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/800px-Utoronto_coa.svg.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                UofT (Informal) Food Guide
+            </a>
+<!-- Navbar buttons -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> 
+         <span class="navbar-toggler-icon"></span>
+         </button> 
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> 
+                <div class="navbar-nav" style="background-color: #3355f068;"> 
+                    <a class="nav-link" aria-current="page" href="#" onclick="openTab(event, 'Home')" id="defaultOpen">Home</a> 
+                    <a class="nav-link" href="#" onclick="openTab(event, 'Dining Halls')">Dining Halls</a> 
+                    <a class="nav-link" href="#" onclick="openTab(event, 'Cafeterias')">Cafeterias</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</nav>
+
+<!-- Tab content 1: Home -->
+<!-- Main Body -->
+<div id="Home" class="tabcontent">
+    <div class="container">
+        <div>
+        <h1>University of Toronto Dining Spots</h1>
+        </div>
+        <div>
+        <p>Hungry on campus? <br> 
+            <div><em>See the University of Toronto's offical food guide below for locations open to the public located on the St. George campus: </em>
+                <br><a target="_blank" href="https://foodservices.utoronto.ca/where-to-eat/">Explore where to grab a bite!</a>
+            </div><br>
+            <div> Where are these dining spots? </div>
+                <div><button onclick="document.location='/Users/sarahchen/Desktop/UofT 2023:24/GGR472/GitHub/GeoJSON'">Find locations here</button></div>
+                <!-- <a target="_blank" href="/Users/sarahchen/Desktop/UofT 2023:24/GGR472/GitHub/GeoJSON">Visualize dining spots here [GeoJSON file code]</a> -->
+                <!-- <div><button id="my-button">Click me!</button></div> -->
+         </p>
+        </div>
+        <!-- Carousel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://pbs.twimg.com/media/CcVfDZuXIAAfB-k?format=jpg&name=large" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.live-campusone.ca/assets/images/sliders/1440/campusone-dinninghall1-1440w.webp" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="https://pbs.twimg.com/media/DWui85CW0AEjP81?format=jpg&name=large" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> <br>
+    </div>   
+</div>
+
+<!-- Tab content 2: Dining Hall -->
+  <div id="Dining Halls" class="tabcontent">
+    <div class="container">
+        <h1>Residence Dining Halls</h1>
+            <div class=row>
+                <div class="col">
+                    <h3>Howard Ferguson <br>Dining Hall</h3>
+                    <p> <h4>Hours of Operation</h4>
+                        <div>Monday to Friday: 7:30 am to 7:30 pm (closed between 3 to 4pm) <br>
+                         Saturday & Sunday: 9:00 am to 7:30 pm (closed between 3 to 4pm)</div><br>
+                         <div><a target="_blank" href="https://www.uc.utoronto.ca/students-student-spaces-places-services-food-menus">View Menu</a></div><br>
+                         <div><a href="https://pbs.twimg.com/media/CcVfDZuXIAAfB-k?format=jpg&name=large" target="_blank">
+                            <img src="https://pbs.twimg.com/media/CcVfDZuXIAAfB-k?format=jpg&name=large" alt=""
+                                style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+                                    middle;border-style: none;"> 
+                            </a></div>
+                    </p> 
+                </div>
+                <div class="col">
+                    <h3>Chestnut Dining Hall</h3>
+                    <p> <h4>Hours of Operation</h4>
+                        <div>Monday to Thursday: 7:30 am to 8:00 pm (closed between 10:30 to 11:30am and 2:00-5:00pm) <br>
+                         Friday to Sunday: 7:00 am to 10:00 pm (varies by day) </div><br>
+                         <div><a target="_blank" href="https://fso.ueat.utoronto.ca/FSO/ServiceMenuReport/ShowReport/001">View Menu</a></div><br>
+                         <div><a href="https://chestnut.utoronto.ca/wp-content/uploads/ChestnutResidence-Chestnuttree.jpg" target="_blank">
+                            <img src="https://chestnut.utoronto.ca/wp-content/uploads/ChestnutResidence-Chestnuttree.jpg" alt=""
+                                style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+                                    middle;border-style: none;"> 
+                            </a></div>
+                    </p> 
+                </div>
+                <div class="col">
+                    <h3>New College Dining Hall</h3>
+                    <p> <h4>Hours of Operation</h4>
+                        <div>Monday to Sunday: 7:30 am to 9:30 pm (Fridays close at 8:00 pm)</div><br>
+                         <div><a target="_blank" href="https://www.newcollege.utoronto.ca/facilities/audrey-taylor-dining-hall/">View Menu</a></div><br>
+                         <div><a href="https://www.newcollege.utoronto.ca/wp-content/uploads/dining-hall-1-1.jpg" target="_blank">
+                            <img src="https://www.newcollege.utoronto.ca/wp-content/uploads/dining-hall-1-1.jpg""
+                                style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+                                    middle;border-style: none;"> 
+                            </a></div>
+                    </p> 
+                </div>
+                <div class="col">
+                    <h3>CampusOne Dining Hall</h3>
+                    <p> <h4>Hours of Operation</h4>
+                        <div>Monday to Friday: 7:00 am to 9:00 pm <br>
+                            Saturday & Sunday: 8:00 am to 9:00 pm </div><br>
+                         <div><a target="_blank" href="https://fso.ueat.utoronto.ca/FSO/ServiceMenuReport/Today">View Menu</a></div><br>
+                         <div><a href="https://www.live-campusone.ca/assets/images/sliders/1440/campusone-dinninghall1-1440w.webp" target="_blank">
+                            <img src="https://www.live-campusone.ca/assets/images/sliders/1440/campusone-dinninghall1-1440w.webp""
+                                style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+                                    middle;border-style: none;"> 
+                            </a></div>
+                    </p> 
+                </div>
+            </div>
+     </div>
+  </div>
+  
+<!-- Tab content 3: Cafeterias -->
+  <div id="Cafeterias" class="tabcontent">
+    <div class="container">
+        <h1>Retail Cafeterias</h1>
+            <div class=row>
+                <div class="col">
+                    <h3>Sid's Cafe</h3>
+                    <p> <h4>Store Directory</h4>
+                       <div><em>Second Cup <br> Ramen Ya! <br> Gourmet Burger House <br> Kung Fu Tea <br> Tortillas </em>
+                       </div><br>
+                         <div><a href="https://media.blogto.com/listings/ae69-20111025-sids-1.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70" target="_blank">
+                            <img src="https://media.blogto.com/listings/ae69-20111025-sids-1.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70"
+                                style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+                                    middle;border-style: none;"> 
+                            </a></div>
+                    </p> 
+                </div>
+                <div class="col">
+                    <h3>Robart's Library Cafeteria</h3>
+                    <p> <h4>Store Directory</h4>
+                        <div><em>Starbucks <br> Kung Pow <br> Grab 'N' Go <br> Stone Oven Pizzeria <br> Tortillas <br> So Sushi </em>
+                        </div><br>
+                          <div><a href="https://pbs.twimg.com/media/DWui85CW0AEjP81?format=jpg&name=large" target="_blank">
+                             <img src="https://pbs.twimg.com/media/DWui85CW0AEjP81?format=jpg&name=large"
+                                 style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+                                     middle;border-style: none;"> 
+                             </a></div>
+                     </p> 
+                </div>
+                <div class="col">
+                    <h3>Medical Sciences Cafe</h3>
+                    <p> <h4>Store Directory</h4>
+                        <div><em>Starbucks <br> Za'atar <br> Grab 'N' Go <br> Stone Oven Pizzeria <br> Fresco Fresca <br> So Sushi <br> Fresca Pappardelle <br> Gourmet Burger House </em>
+                        </div><br>
+                          <div><a href="http://dev.ueat.utoronto.ca/wp-content/uploads/2015/06/MSB_cafeteria-1.jpg" target="_blank">
+                             <img src="http://dev.ueat.utoronto.ca/wp-content/uploads/2015/06/MSB_cafeteria-1.jpg"
+                                 style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+                                     middle;border-style: none;"> 
+                             </a></div>
+                     </p> 
+                </div>
+            </div>
+     </div>
+  </div>
+    
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script> // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click(); </script>
+
+</body>
+
+</html>
+
